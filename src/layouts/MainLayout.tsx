@@ -3,6 +3,7 @@ import {
   useEffect,
   FunctionComponent,
   PropsWithChildren,
+  useState,
 } from "react";
 import classNames from "classnames";
 import axios from "axios";
@@ -10,6 +11,7 @@ import { QueryFunctionContext, useQuery } from "@tanstack/react-query";
 import { toast } from "sonner";
 
 // Custom Component
+import { DisplayCurrentTime } from "@/views/home/DisplayCurrentTime";
 import { UserErrorAlert } from "@/views/home/UserErrorAlert";
 import { UserInfoCard } from "@/views/home/UserInfoCard";
 import { UserSelector } from "@/views/home/UserSelector";
@@ -31,11 +33,18 @@ type MainLayoutProps = {};
 export const MainLayout: FunctionComponent<
   PropsWithChildren<MainLayoutProps>
 > = () => {
+  // State
+  const [currentTime, setCurrentTime] = useState<Date>(new Date());
+
   // Hooks
   const {
     state: { selectedUser },
     dispatch,
   } = useUserContext();
+
+  const updateCurrentTime = useCallback((time: Date) => {
+    setCurrentTime(time);
+  }, []);
 
   const getUserData = useCallback(
     async ({
@@ -76,11 +85,23 @@ export const MainLayout: FunctionComponent<
       className={classNames(
         inter.className,
         "h-screen w-screen",
-        "flex flex-col p-6 items-center",
+        "flex flex-col p-6 items-center justify-between",
       )}
     >
-      {error ? <UserErrorAlert /> : <UserInfoCard loading={isFetching} />}
-      <UserSelector />
+      <section className={classNames("flex flex-col items-center w-full")}>
+        {error ? <UserErrorAlert /> : <UserInfoCard loading={isFetching} />}
+        <UserSelector />
+      </section>
+      <section
+        className={classNames(
+          "flex flex-row justify-between w-full sm:w-8/12 border border-gray-300 rounded-lg p-4",
+        )}
+      >
+        <DisplayCurrentTime
+          currentTime={currentTime}
+          updateCurrentTime={updateCurrentTime}
+        />
+      </section>
     </main>
   );
 };
