@@ -12,6 +12,7 @@ import { toast } from "sonner";
 
 // Custom Component
 import { DisplayCurrentTime } from "@/views/home/DisplayCurrentTime";
+import { LogSwitch } from "@/views/home/LogSwitch";
 import { UserErrorAlert } from "@/views/home/UserErrorAlert";
 import { UserInfoCard } from "@/views/home/UserInfoCard";
 import { UserSelector } from "@/views/home/UserSelector";
@@ -19,6 +20,9 @@ import { UserSelector } from "@/views/home/UserSelector";
 // Contexts
 import { useUserContext } from "@/context/UserContext";
 import { UserAction } from "@/context/actions";
+
+// Hooks
+import { useLogUserDetail } from "@/hooks/useLogUserDetail";
 
 // Types
 import { Person, User } from "@/utils/common/person";
@@ -41,6 +45,8 @@ export const MainLayout: FunctionComponent<
     state: { selectedUser },
     dispatch,
   } = useUserContext();
+
+  useLogUserDetail(currentTime);
 
   const updateCurrentTime = useCallback((time: Date) => {
     setCurrentTime(time);
@@ -101,6 +107,7 @@ export const MainLayout: FunctionComponent<
           currentTime={currentTime}
           updateCurrentTime={updateCurrentTime}
         />
+        <LogSwitch />
       </section>
     </main>
   );
