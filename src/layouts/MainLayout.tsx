@@ -90,8 +90,8 @@ export const MainLayout: FunctionComponent<
     <main
       className={classNames(
         inter.className,
-        "h-screen w-screen",
-        "flex flex-col p-6 items-center justify-between",
+        "h-screen w-screen overflow-auto",
+        "flex flex-col p-6 items-center justify-between gap-4",
       )}
     >
       <section className={classNames("flex flex-col items-center w-full")}>
@@ -100,7 +100,7 @@ export const MainLayout: FunctionComponent<
       </section>
       <section
         className={classNames(
-          "flex flex-row justify-between w-full sm:w-8/12 border border-gray-300 rounded-lg p-4",
+          "flex flex-col sm:flex-row justify-between w-full sm:w-8/12 border border-gray-300 rounded-lg p-4 gap-4",
         )}
       >
         <DisplayCurrentTime
