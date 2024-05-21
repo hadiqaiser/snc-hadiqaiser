@@ -1,4 +1,4 @@
-import { Person, User } from "@/utils/common/person";
+import { Person, User } from "../common/person";
 
 export const mockUsers: { [key in Person]: User | null } = {
   [Person.PersonA]: {
