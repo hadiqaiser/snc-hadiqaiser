@@ -1,14 +1,9 @@
-import { MainLayout } from "@/layouts/MainLayout";
-import { NextPage, GetServerSidePropsContext } from "next";
+import { GetServerSidePropsContext } from "next";
 
 // Utils
 import { createClient } from "@/utils/supabase/server-props";
 
-const Home: NextPage = () => {
-  return <MainLayout />;
-};
-
-export async function getServerSideProps(context: GetServerSidePropsContext) {
+export const authorizeUser = async (context: GetServerSidePropsContext) => {
   const supabase = createClient(context);
 
   const { data, error } = await supabase.auth.getUser();
@@ -26,6 +21,4 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
       user: data.user,
     },
   };
-}
-
-export default Home;
+};
