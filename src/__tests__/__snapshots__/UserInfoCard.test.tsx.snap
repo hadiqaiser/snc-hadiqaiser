@@ -1,0 +1,250 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserInfoCard should match the UserInfoCard snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="rounded-lg border bg-card text-card-foreground shadow-sm relative w-full sm:w-8/12 h-auto"
+      >
+        <div
+          class="relative w-full h-52"
+        >
+          <img
+            alt="bg-pic"
+            class="rounded-md object-cover"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            src="/images/fallbackBgImg.svg"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+          />
+        </div>
+        <div
+          class="pb-6 px-6"
+        >
+          <div
+            class="relative -mt-16 px-4 flex justify-start sm:-mt-20"
+          >
+            <div
+              class="relative w-32 h-32 sm:w-40 sm:h-40"
+            >
+              <img
+                alt="profile-pic"
+                class="rounded-full object-cover"
+                data-nimg="fill"
+                decoding="async"
+                loading="lazy"
+                src="/images/fallbackProfileImg.svg"
+                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+              />
+            </div>
+          </div>
+          <div
+            class="flex flex-col sm:flex-row justify-between"
+          >
+            <div
+              class="flex flex-col gap-2 mt-3"
+            >
+              <h3
+                class="scroll-m-20 text-2xl font-semibold tracking-tight"
+              >
+                John Doe
+              </h3>
+              <p
+                class="text-xl text-muted-foreground"
+              >
+                Software Engineer
+              </p>
+            </div>
+            <div
+              class="flex flex-row gap-5 mt-3 justify-evenly"
+            >
+              <div
+                class="flex flex-col justify-between py-3 items-center"
+              >
+                <p
+                  class="text-base text-muted-foreground"
+                >
+                  100
+                </p>
+                <p
+                  class="text-base"
+                >
+                  Followers
+                </p>
+              </div>
+              <div
+                class="shrink-0 bg-border h-full w-[1px]"
+                data-orientation="vertical"
+                role="none"
+              />
+              <div
+                class="flex flex-col justify-between py-3 items-center"
+              >
+                <p
+                  class="text-base text-muted-foreground"
+                >
+                  200
+                </p>
+                <p
+                  class="text-base"
+                >
+                  Following
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="rounded-lg border bg-card text-card-foreground shadow-sm relative w-full sm:w-8/12 h-auto"
+    >
+      <div
+        class="relative w-full h-52"
+      >
+        <img
+          alt="bg-pic"
+          class="rounded-md object-cover"
+          data-nimg="fill"
+          decoding="async"
+          loading="lazy"
+          src="/images/fallbackBgImg.svg"
+          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+        />
+      </div>
+      <div
+        class="pb-6 px-6"
+      >
+        <div
+          class="relative -mt-16 px-4 flex justify-start sm:-mt-20"
+        >
+          <div
+            class="relative w-32 h-32 sm:w-40 sm:h-40"
+          >
+            <img
+              alt="profile-pic"
+              class="rounded-full object-cover"
+              data-nimg="fill"
+              decoding="async"
+              loading="lazy"
+              src="/images/fallbackProfileImg.svg"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row justify-between"
+        >
+          <div
+            class="flex flex-col gap-2 mt-3"
+          >
+            <h3
+              class="scroll-m-20 text-2xl font-semibold tracking-tight"
+            >
+              John Doe
+            </h3>
+            <p
+              class="text-xl text-muted-foreground"
+            >
+              Software Engineer
+            </p>
+          </div>
+          <div
+            class="flex flex-row gap-5 mt-3 justify-evenly"
+          >
+            <div
+              class="flex flex-col justify-between py-3 items-center"
+            >
+              <p
+                class="text-base text-muted-foreground"
+              >
+                100
+              </p>
+              <p
+                class="text-base"
+              >
+                Followers
+              </p>
+            </div>
+            <div
+              class="shrink-0 bg-border h-full w-[1px]"
+              data-orientation="vertical"
+              role="none"
+            />
+            <div
+              class="flex flex-col justify-between py-3 items-center"
+            >
+              <p
+                class="text-base text-muted-foreground"
+              >
+                200
+              </p>
+              <p
+                class="text-base"
+              >
+                Following
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

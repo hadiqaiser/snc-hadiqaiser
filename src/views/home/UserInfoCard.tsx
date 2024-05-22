@@ -25,7 +25,10 @@ export const UserInfoCard: FunctionComponent<
   return (
     <Card className={classNames("relative w-full sm:w-8/12 h-auto")}>
       {loading ? (
-        <Skeleton className={classNames("w-full h-52")} />
+        <Skeleton
+          className={classNames("w-full h-52")}
+          data-testid="card-skeleton"
+        />
       ) : (
         <div className={classNames("relative w-full h-52")}>
           <Image
@@ -46,6 +49,7 @@ export const UserInfoCard: FunctionComponent<
             {loading ? (
               <Skeleton
                 className={classNames("rounded-full w-32 h-32 sm:w-40 sm:h-40")}
+                data-testid="card-skeleton"
               />
             ) : (
               <Image
@@ -64,7 +68,10 @@ export const UserInfoCard: FunctionComponent<
         >
           <div className={classNames("flex flex-col gap-2 mt-3")}>
             {loading ? (
-              <Skeleton className={classNames("h-8 w-40")} />
+              <Skeleton
+                className={classNames("h-8 w-40")}
+                data-testid="card-skeleton"
+              />
             ) : (
               <h3
                 className={classNames(
@@ -75,7 +82,10 @@ export const UserInfoCard: FunctionComponent<
               </h3>
             )}
             {loading ? (
-              <Skeleton className={classNames("h-7 w-48")} />
+              <Skeleton
+                className={classNames("h-7 w-48")}
+                data-testid="card-skeleton"
+              />
             ) : (
               <p className={classNames("text-xl text-muted-foreground")}>
                 {userData.title}
@@ -91,7 +101,7 @@ export const UserInfoCard: FunctionComponent<
               )}
             >
               {loading ? (
-                <Skeleton className="h-6 w-12" />
+                <Skeleton className="h-6 w-12" data-testid="card-skeleton" />
               ) : (
                 <p className={classNames("text-base text-muted-foreground")}>
                   {userData.followers}
@@ -106,7 +116,7 @@ export const UserInfoCard: FunctionComponent<
               )}
             >
               {loading ? (
-                <Skeleton className="h-6 w-12" />
+                <Skeleton className="h-6 w-12" data-testid="card-skeleton" />
               ) : (
                 <p className={classNames("text-base text-muted-foreground")}>
                   {userData.following}

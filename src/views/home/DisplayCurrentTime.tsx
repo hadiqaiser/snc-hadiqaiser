@@ -43,7 +43,10 @@ export const DisplayCurrentTime: FunctionComponent<
   }, [updateCurrentTime]);
 
   return (
-    <p className={classNames(robotoMono.className, "leading-7")}>
+    <p
+      className={classNames(robotoMono.className, "leading-7")}
+      data-testid="current-time"
+    >
       {isMounted && formattedTime}
     </p>
   );

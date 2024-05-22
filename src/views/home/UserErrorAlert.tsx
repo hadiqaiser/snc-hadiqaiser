@@ -14,7 +14,9 @@ export const UserErrorAlert: FunctionComponent<
     <Alert variant="destructive" className={classNames("w-full sm:w-8/12")}>
       <AlertCircle className="h-4 w-4" />
       <AlertTitle>Error</AlertTitle>
-      <AlertDescription>Failed to fetch user information</AlertDescription>
+      <AlertDescription data-testid="alert-description">
+        Failed to fetch user information
+      </AlertDescription>
     </Alert>
   );
 };
